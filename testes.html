@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Box</title>
+    <style>
+        /* Donate Now Button Container */
+        .donation-container {
+            position: fixed;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f4a261;
+            padding: 5px;
+            border-radius: 8px 0 0 8px;
+            box-shadow: -2px 0 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            cursor: pointer;
+        }
+
+        /* Donation Button */
+        .donation-button {
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+            color: #000;
+            font-weight: bold;
+            font-size: 12px;
+            margin-bottom: 5px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .donation-button:hover {
+            transform: scale(1.1);
+            color: #e85d04;
+        }
+
+        /* Donation Box */
+        #donation-box {
+            position: fixed;
+            top: 50%;
+            right: -350px;
+            transform: translateY(-50%);
+            width: 300px;
+            background-color: #ffffff;
+            border-radius: 8px 0 0 8px;
+            box-shadow: -4px 0 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            z-index: 999;
+            opacity: 0;
+            pointer-events: none;
+            transition: transform 0.6s cubic-bezier(0.65, 0, 0.35, 1), opacity 0.4s ease-in-out;
+        }
+
+        /* Munculkan Box */
+        #donation-box.show {
+            transform: translateY(-50%) translateX(0);
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        /* Sembunyikan Box */
+        #donation-box.hide {
+            transform: translateY(-50%) translateX(350px);
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        /* Tombol Panah Vertikal */
+        #donation-box .arrow-btn {
+            position: absolute;
+            top: 0;
+            left: -30px;
+            height: 100%;
+            width: 30px;
+            background-color: #f4a261;
+            border-radius: 8px 0 0 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+        }
+
+        #donation-box .arrow-btn:hover {
+            background-color: #e78b42;
+            transform: scale(1.1);
+        }
+
+        #donation-box .arrow-btn::before {
+            content: '➔';
+            font-size: 20px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Donate Now Button -->
+    <div class="donation-container">
+        <button class="donation-button">DONATE NOW</button>
+    </div>
+
+    <!-- Donation Box -->
+    <div id="donation-box" class="hide">
+        <h3>Profile Donasi</h3>
+        <p>Terima kasih atas dukungan Anda. Mari kita bersama membantu sesama yang membutuhkan.</p>
+        <a href="#" class="donate-link">Lihat Kampanye</a>
+        <div class="arrow-btn"></div> <!-- Tombol untuk menutup box -->
+    </div>
+
+    <script>
+        // Ambil elemen tombol dan box
+        const donationButton = document.querySelector('.donation-button'); // Tombol "Donate Now"
+        const donationBox = document.getElementById('donation-box'); // Box donasi
+        const closeButton = document.querySelector('#donation-box .arrow-btn'); // Tombol tutup
+
+        // Klik tombol "Donate Now" untuk membuka box
+        donationButton.addEventListener('click', () => {
+            donationBox.classList.add('show');  // Tambahkan class "show"
+            donationBox.classList.remove('hide'); // Hilangkan class "hide"
+            console.log('Tombol Donate Now diklik');
+        });
+
+        // Klik tombol panah untuk menutup box
+        closeButton.addEventListener('click', () => {
+            donationBox.classList.add('hide');  // Tambahkan class "hide"
+            donationBox.classList.remove('show'); // Hilangkan class "show"
+            console.log('Tombol Tutup diklik');
+        });
+    </script>
+</body>

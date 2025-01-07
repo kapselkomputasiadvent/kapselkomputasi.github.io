@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peminatan</title>
+    
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="style_peminatan.css">
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+    <header>
+        <header class="header">
+            <nav>
+                <div class="logo">
+                    <img src="ogol/logo_unpar.png">
+                    <img src="ogol/MATUNPAR.png">
+                    <img src="ogol/HIMAMAT.png">
+                </div>
+                <div class="nav-links"> 
+                    <ul>
+                        <li><a href="HOME.html">HOME</a></li>
+                        <li><a href="STRUKTURAL_DOSEN.html">STRUKTURAL</a></li>
+                        <li><a href="PEMINATAN.html">PEMINATAN</a></li>
+                        <li><a href="himpunan.html">HIMPUNAN</a></li>
+                        <li><a href="javascript:void(0);" onclick="openFeedback()">FEEDBACK</a></li>
+                    </ul>
+                </div>
+
+                <!-- Auth Navigation -->
+                <ul id="auth-nav">
+                    <li><button id="login-btn-header">Login</button></li>
+                    <li><button id="register-btn-header">Register</button></li>
+                </ul>
+
+                <!-- User Profile Dropdown -->
+                <div id="user-profile" style="display: none;">
+                    <span id="profile-username">Welcome, Username</span>
+                    <img id="profile-picture" src="OGOL/icon_users.png" alt="Profile Picture">
+                    <button id="logout-btn">Logout</button>
+                </div>
+
+            </nav>
+
+
+        <section class="programgrid">
+            <div class="program">
+                <h2><a href="aktuaria.html">PROGRAM<br>AKTUARIA</a></h2>
+                <p>Program ini fokus pada ilmu aktuaria</p> 
+            </div>
+            <div class="program">
+                <h2><a href="analitika_data.html">PROGRAM<br>ANALITIKA DATA</a></h2>
+                <p>Program ini fokus pada ilmu analitika data</p>
+            </div>
+            <div class="program">
+                <h2><a href="optimasi.html">PROGRAM<br>OPTIMASI</a></h2>
+                <p>Program ini fokus pada ilmu optimasi</p>
+            </div>
+            <div class="program">
+                <h2><a href="matematika_murni.html">PROGRAM<br>MATEMATIKA MURNI</a></h2>
+                <p>Program ini fokus pada ilmu matematika murni</p>
+            </div>        
+        </section>
+        
+        <!-- CHART PEMINATAN -->
+        <div class="mid-text">
+            <p>Berapa Sih Jumlah Mahasiswa Aktif di Matematika?</p>
+        </div>
+        <section id="peminatanchartsection">
+            <h10>Jumlah Mahasiswa Aktif per Peminatan</h10>
+            <div id="peminatan-chart-container">
+                <canvas id="peminatanChart"></canvas>
+            </div>
+        </section>
+    
+    </header>         
+    
+    <!-- BACK TO TOP -->
+    <a href="#" class="back-to-top" id="backToTopBtn">&#8679;</a>
+    <section class="section section-3" id="text-section">
+        <div class="fade-in-text" id="textContainer"></div>
+    </section>
+    <a href="#" class="back-to-top" id="backToTopBtn">&#8679;</a>
+
+
+    <!-- copas -->
+    <div id="auth-container">
+        <!-- Tombol Close -->
+        <button class="close-btn" id="close-auth">&times;</button>
+        
+        <!-- Form Login -->
+        <div id="login-form">
+            <h2>Login</h2>
+            <input type="text" id="login-username" placeholder="Username">
+            <input type="password" id="login-password" placeholder="Password">
+            <button id="login-btn">Login</button>
+        </div>
+
+        <!-- Form Register -->
+        <div id="register-form">
+            <h2>Register</h2>
+            <input type="text" id="register-username" placeholder="Username">
+            <input type="email" id="register-email" placeholder="Email">
+            <input type="password" id="register-password" placeholder="Password">
+            <button id="register-btn">Register</button>
+        </div>
+    </div>
+
+
+    <!-- Donasi Bosku -->
+
+    <!-- Donation Container -->
+    <div class="donation-container">
+        <button class="donation-button">DONATE NOW</button>
+    </div>
+
+    <!-- Donation Box -->
+    <div id="donation-box">
+        <div class="arrow-btn" onclick="toggleDonationBox()"></div> <!-- Tombol panah -->
+        <h3>Profile Donasi</h3>
+        <p>Terima kasih atas dukungan Anda. Mari kita bersama membantu sesama yang membutuhkan.</p>
+        <a href="https://kitabisa.com/campaign/sekolahyanglayakuntukanakanakpelosokmaluku" target="_blank" class="donate-link">Lihat Kampanye</a>
+    </div>
+
+    <!--Feedback ALL-->
+    <section class="pop-up-feedback">
+        <div class="feedback">
+            <span class="close-btn" onclick="closeFeedback()">&times;</span>
+            <form action="https://script.google.com/macros/s/AKfycbw3ckK30W_CDyQ4b_yIyuhNe672QNAcPEGt3ZGpYZG29xLkt-67OZovGZ8W5m1IDSCp/exec" class="contact-left" id="FeedbackForm" method="POST">
+                <div class="contact-left-title">
+                    <h6>Put Your Feedback here</h6>
+                    <hr>
+                </div>
+                <input type="text" id="name" name="name" placeholder="Name" class="contact-inputs" required>
+                <input type="text" id="email" name="email" placeholder="E-mail" class="contact-inputs" required>
+                <textarea id="message" name="message" placeholder="Message and Feedback" class="contact-inputs"></textarea>
+                <button type="submit"> Submit</button>
+            </form>
+            <div id="thankYouMessage" style="display: none; text-align: center;">
+                <h3>Thank You for Your Feedback!</h3>
+                <p>Your input is valuable to us. We'll review it soon.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="js/login.js"></script>
+    <script src="js/register.js"></script>
+    <script src="crisp-widget.js"></script>
+    <script src="PARA JAVASCRIPT/Peminatan.js"></script>
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="OGOL/LOGO_UNPAR_TRANS.png" alt="Logo Universitas Katolik Parahyangan">
+                <address>
+                    <p>Jl. Ciumbuleuit No. 94 Bandung 40141<br>Jawa Barat</p>
+                    <p>(022) 203 2655, (022) 204 2004</p>
+                    <p>math@unpar.ac.id</p>
+                </address>
+            </div>
+    
+            <div class="footer-extra">
+                <div class="logos">
+                    <img src="OGOL/BAN-PT.png" alt="BAN-PT">
+                    <img src="OGOL/MBKM.png" alt="Kampus Merdeka">
+                </div>
+                <div class="footer-button">
+                    <a href="#" class="cta-button">Daftar Sekarang</a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2024 Matematika Universitas Katolik Parahyangan. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+

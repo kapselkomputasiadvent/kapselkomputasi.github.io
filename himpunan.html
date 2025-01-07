@@ -1,0 +1,539 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HMPSMa UNPAR</title>
+
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="style_himpunan.css">
+        <script src="PARA JAVASCRIPT/himpunan_js.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    </head>
+
+    <body>
+        <!--------------------- HEADER AND NAVIGATOR --------------------->
+        <section class="header">
+            <nav>
+                <!-- Logo -->
+                <div class="logo">
+                    <img src="OGOL/logo_unpar.png" alt="Logo UNPAR">
+                    <img src="OGOL/MATUNPAR.png" alt="Matematika UNPAR">
+                    <img src="OGOL/HIMAMAT.png" alt="HIMAMAT">
+                </div>
+                <!-- Nav Header -->
+                <div class="nav-links"> 
+                    <ul>
+                        <li><a href="HOME.html">HOME</a></li>
+                        <li><a href="STRUKTURAL_DOSEN.html">STRUKTURAL</a></li>
+                        <li><a href="PEMINATAN.html">PEMINATAN</a></li>
+                        <li><a href="himpunan.html">HIMPUNAN</a></li>
+                        <li><a href="javascript:void(0);" onclick="openFeedback()">FEEDBACK</a></li>
+                    </ul>
+                </div>
+                <ul id="auth-nav">
+                    <li><button id="login-btn-header">Login</button></li>
+                    <li><button id="register-btn-header">Register</button></li>
+                </ul>
+                <div id="user-profile" style="display: none;">
+                    <span id="profile-username">Welcome, Username</span>
+                    <img id="profile-picture" src="ikon_pengguna.png" alt="Profile Picture">
+                    <button id="logout-btn">Logout</button>
+                </div>
+            </nav>
+            <div class="text-box">
+                <h1>HMPSMa</h1>
+                <h6>Himpunan Mahasiswa Program Studi Matematika</h6>
+                <a href="https://www.instagram.com/hmpsma.unpar/" class="hero-btn"> VISIT US MORE </a>
+            </div>
+        </section>
+         <!--------------------- END OF HEADER AND NAVIGATOR --------------------->
+
+        <!--------------------- VISI & MISI --------------------->
+        <section class="events">
+            <div class="title-events">
+                <h3>Visi dan Misi</h3>
+                <div class="line"></div>
+            </div>
+            <div class="row">
+                <div class="col">
+                  <h4>VISI</h4>
+                  <p>Menjadikan Himpunan Mahasiswa Program Studi Matematika sebagai ruang untuk #BERKARYA (Berkembang Bersama, Menghadirkan Kenyamanan) yang dapat diandalkan secara menyeluruh.</p>
+                </div>
+                <div class="col">
+                    <h4>MISI</h4>
+                    <p>1. Mengutamakan rasa kekeluargaan dan komunikasi antar anggota himpunan agar tercipta lingkungan HMPSMa yang saling merangkul. <br>
+                        2. Membentuk HMPSMa yang atraktif dan kualitatif sehingga mendorong keterlibatan guna meningkatkan sumber daya organisasi. <br>
+                        3. Menjalin hubungan yang kolaboratif dan bermanfaat baik secara internal maupun dengan pihak eksternal. <br>
+                        4. Menjadi tumpuan agar dapat mengoptimalkan potensi mahasiswa Matematika baik secara akademik maupun non akademik untuk diabdikan kembali kepada masyarakat.</p>
+                </div>
+            </div>
+        </section>
+
+        <!--------------------- END OF VISI MISI --------------------->
+
+
+
+        <!--------------------- BANNER --------------------->
+
+        <section class="section__container banner__container">
+            <div class="banner__card">
+              <h4>27+</h4>
+              <p>Kegiatan Inspiratif asah potensi</p>
+            </div>
+            <div class="banner__card">
+              <h4>75+</h4>
+              <p>Kontribusi Anggota pertahun</p>
+            </div>
+            <div class="banner__card">
+              <h4>4.8</h4>
+              <p>Penilaian dari SUrvei</p>
+            </div>
+        </section>
+
+
+        <!--------------------- BANNER --------------------->
+
+        <!--------------------- ORGANIZATION STRUCTURE --------------------->
+        <section class="structural">
+            <div class="title-events">
+                <h3>Struktur Organisasi</h3>
+                <div class="line"></div>
+            </div>
+            <div class="tree">
+                <ul>
+                    <li>
+                        <a href="#">Ketua</a>
+                        <ul>
+                            <li>
+                                <a href="#">Kesekretariatan</a>
+                            </li>
+                            <li>
+                                <a href="#">Kebendaharaan</a>
+                            </li>
+                            <li>
+                                <a href="#">Media dan Komunikasi</a>
+                            </li>
+                            <li>
+                                <a href="#">Bidang-Bidang</a>
+                                <ul>
+                                    <li>
+                                        <a href="#">Internal</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Kemahasiswaan</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Pengembangan Sumber Daya Anggota</a>
+                                                </li>
+                                            </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Eksternal</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Hubungan Masyarakat</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Pengabdian Masyarakat</a>
+                                                </li>
+                                            </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Minat dan Bakat</a>
+                                        <ul>
+                                            <li>
+                                                <a href="#">Akademik</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Seni dan Olahraga</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!--------------------- END OF ORGANIZATION STRUCTURE --------------------->
+
+        <!--------------------- PROGRAM KERJA --------------------->
+        <section class="proker">
+            <div class="title-events">
+                <h3>Program Kerja</h3>
+                <div class="line"></div>
+            </div>
+            <!-- Images Filter Buttons Section -->
+            <div class="row mt-5" id="filter-buttons">
+                <div class="col-12">
+                <button class="btn mb-2 me-1 active" data-filter="all">Show all</button>
+                <button class="btn mb-2 mx-1" data-filter="medkom">Biro Media Komunikasi</button>
+                <button class="btn mb-2 mx-1" data-filter="kemaha">Div. Kemahasiswaan</button>
+                <button class="btn mb-2 mx-1" data-filter="psda">Div. PSDA</button>
+                <button class="btn mb-2 mx-1" data-filter="akademik">Div. Akademik</button>
+                <button class="btn mb-2 mx-1" data-filter="sor">Div. Seni dan Olahraga</button>
+                <button class="btn mb-2 mx-1" data-filter="humas">Div. Hubungan Masyarakat</button>
+                <button class="btn mb-2 mx-1" data-filter="pengmas">Div. Pengabdian Masyarakat</button>
+                <button class="btn mb-2 mx-1" data-filter="kolab">Kolaborasi</button>
+                </div>
+            </div>
+
+            <!-- Filterable Images / Cards Section -->
+            <div class="row px-2 mt-4 gap-3" id="filterable-cards">
+                <div class="card p-0" data-name="medkom">
+                    <img src="proker/bts.png" alt="img" />
+                    <div class="card-body">
+                        <h6 class="card-title">Buletin Tujuh Satu</h6>
+                    </div>
+                </div>
+                <div class="card p-0" data-name="medkom">
+                    <img src="proker/modsos.png" alt="img" />
+                    <div class="card-body">
+                        <h6 class="card-title">Media Sosial</h6>
+                    </div>
+                </div>
+                <div class="card p-0" data-name="medkom">
+                    <img src="proker/inside.png" alt="img" />
+                    <div class="card-body">
+                        <h6 class="card-title">Inside</h6>
+                    </div>
+                </div>
+                <div class="card p-0" data-name="medkom">
+                    <img src="proker/mathding.png" alt="img" />
+                    <div class="card-body">
+                        <h6 class="card-title">Mathding</h6>
+                    </div>
+                </div>
+                <div class="card p-0" data-name="kemaha">
+                    <img src="proker/siap.png" alt="img" />
+                    <div class="card-body">
+                        <h6 class="card-title">SIAP JURUSAN</h6>
+                    </div>
+                </div>
+                <div class="card p-0" data-name="kemaha">
+                    <img src="proker/mathgathering.png" alt="img" />
+                    <div class="card-body">
+                        <h6 class="card-title">Math Gathering</h6>
+                    </div>
+                </div>
+                <div class="card p-0" data-name="kemaha">
+                    <img src="proker/masterclass.png" alt="img" />
+                    <div class="card-body">
+                        <h6 class="card-title">Masterclass</h6>
+                    </div>
+                </div>
+                <div class="card p-0" data-name="kemaha">
+                    <img src="proker/campingmath.png" alt="img" />
+                    <div class="card-body">
+                        <h6 class="card-title">Camping Math</h6>
+                    </div>
+                </div>
+                <div class="card p-0" data-name="psda">
+                    <img src="proker/diklat.png" alt="img" />
+                    <div class="card-body">
+                        <h6 class="card-title">Diklat</h6>
+                    </div>
+                </div>
+                <div class="card p-0" data-name="psda">
+                    <img src="proker/hcd.png" alt="img" />
+                    <div class="card-body">
+                        <h6 class="card-title">HMPSMa Commitee Day</h6>
+                    </div>
+                </div>
+                <div class="card p-0" data-name="akademik">
+                    <img src="proker/tutor.png" alt="img" />
+                    <div class="card-body">
+                        <h6 class="card-title">Tutor UTS dan UAS</h6>
+                    </div>
+                </div>
+                <div class="card p-0" data-name="akademik">
+                    <img src="proker/mathclub.png" alt="img" />
+                    <div class="card-body">
+                        <h6 class="card-title">Math Club</h6>
+                    </div>
+                </div>
+                <div class="card p-0" data-name="akademik">
+                    <img src="proker/komat.png" alt="img" />
+                    <div class="card-body">
+                        <h6 class="card-title">Kompetisi Matematika (KOMAT)</h6>
+                    </div>
+                </div>
+                <div class="card p-0" data-name="akademik">
+                    <img src="proker/programming.png" alt="img" />
+                    <div class="card-body">
+                        <h6 class="card-title">Programming Class</h6>
+                    </div>
+                </div>
+                <div class="card p-0" data-name="sor">
+                    <img src="proker/liga_math.png" alt="img" />
+                    <div class="card-body">
+                        <h6 class="card-title">Liga Math</h6>
+                    </div>
+                </div>
+                <div class="card p-0" data-name="sor">
+                    <img src="proker/orrutin.png" alt="img" />
+                    <div class="card-body">
+                        <h6 class="card-title">OR Rutin</h6>
+                    </div>
+                </div>
+                <div class="card p-0" data-name="humas">
+                    <img src="proker/studibanding.png" alt="img" />
+                    <div class="card-body">
+                        <h6 class="card-title">Studi Banding</h6>
+                    </div>
+                </div>
+                <div class="card p-0" data-name="humas">
+                    <img src="proker/kp.png" alt="img" />
+                    <div class="card-body">
+                        <h6 class="card-title">Kunjungan Perusahaan</h6>
+                    </div>
+                </div>
+                <div class="card p-0" data-name="humas">
+                    <img src="proker/mathgrad.png" alt="img" />
+                    <div class="card-body">
+                        <h6 class="card-title">Math Graduation (MathGrad)</h6>
+                    </div>
+                </div>
+                <div class="card p-0" data-name="pengmas">
+                    <img src="proker/mathcares.png" alt="img" />
+                    <div class="card-body">
+                        <h6 class="card-title">Math Cares</h6>
+                    </div>
+                </div>
+                <div class="card p-0" data-name="kolab">
+                    <img src="proker/gigs.png" alt="img" />
+                    <div class="card-body">
+                        <h6 class="card-title">616's /gigs/</h6>
+                    </div>
+                </div>
+                <div class="card p-0" data-name="kolab">
+                    <img src="proker/matematikamengajar.png" alt="img" />
+                    <div class="card-body">
+                        <h6 class="card-title">Matematika Mengajar</h6>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--------------------- END OF PROGRAM KERJA --------------------->
+
+
+        <!--------------------- CHART --------------------->
+        <section class="chart">
+            <div class="title-events">
+                <h3>Grafik</h3>
+                <div class="line"></div>
+            </div>
+            <div class="graph-box">
+                <div class="graph">
+                    <canvas id="myChart">
+    
+                    </canvas>
+                </div>
+                <div class="graph">
+                    <canvas id="pieChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!--------------------- END OF cCHART --------------------->
+
+
+
+
+        <!--------------------- REVIEW --------------------->
+        <section class="review">
+            <div class="title-events">
+                <h3>Apa kata mereka?</h3>
+                <div class="line"></div>
+            </div>
+            <div class="box-review-container">
+                <div class="box-review">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>
+                        "Setelah saya masuk HMPSMa, saya mendapatkan softskills dalam banyak ranah, salah satunya adalah skill komunikasi dan kepemimpinan. Dan juga didalam organisaasi ini sendiri mengajarkan kita betapa pentingnya toleransi dalam perbedaan pendapat dan yang paling penting adalah mengajarkan saya untuk memanajemen waktu dalam hal apapun. Terima kasih, HMPSMa!" 
+                    </p>
+                    <div class="user">
+                        <div class="user-info">
+                            <h3>Indra Kurniawan'20</h3>
+                            <span>Staff Kesekretariatan</span>
+                        </div>
+                    </div>
+                    <span class="fas fa-quote-right"></span>
+                </div>
+                <div class="box-review">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>
+                        "Himpunan ini mengajarkan saya pentingnya asas kekeluargaan walaupun disatu sisi ada hal yang kurang bisa saya terima yaitu perbedaan pendapat, tapi tak menutup kemungkinanan saya untuk terus mengembangkan bakat - bakat organisasi yang ada"
+                    </p>
+                    <div class="user">
+                        <div class="user-info">
+                            <h3>Reza Maulana'21</h3>
+                            <span>Staff Eksternal</span>
+                        </div>
+                    </div>
+                    <span class="fas fa-quote-right"></span>
+                </div>
+                <div class="box-review">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>
+                        "Keren HMPSMa! Semenjak saya bergabung, sirkel pertemanan saya menjadi lebih lebar dan saya baru tahu betapa pentingnya jaringan - jaringan pertemanan dalam organisasi untuk menunjang kehidupan semasa kuliah."
+                    </p>
+                    <div class="user">
+                        <div class="user-info">
+                            <h3>Dina Marlina'21</h3>
+                            <span>Staff Minat Bakat</span>
+                        </div>
+                    </div>
+                    <span class="fas fa-quote-right"></span>
+                </div>
+                <div class="box-review">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>
+                        "Saya agak menyesal sebenarnya masuk HMPSMa karena ternyata saya tidak bisa mengatur waktu dalam hal organisasi maupun belajar. Hal ini pula yang membuat nilai saya turun tapi tetap ada softskills yang saya dapatkan yaitu komunikasi."
+                    </p>
+                    <div class="user">
+                        <div class="user-info">
+                            <h3>Dede Kurniawan'20</h3>
+                            <span>Staff Media Komunikasi</span>
+                        </div>
+                    </div>
+                    <span class="fas fa-quote-right"></span>
+                </div>
+            </div>
+        </section>
+        <!--------------------- REVIEW --------------------->
+
+
+        
+
+          <!-- copas -->
+    <div id="auth-container">
+        <!-- Tombol Close -->
+        <button class="close-btn" id="close-auth">&times;</button>
+        
+        <!-- Form Login -->
+        <div id="login-form">
+            <h2>Login</h2>
+            <input type="text" id="login-username" placeholder="Username">
+            <input type="password" id="login-password" placeholder="Password">
+            <button id="login-btn">Login</button>
+        </div>
+
+        <!-- Form Register -->
+        <div id="register-form">
+            <h2>Register</h2>
+            <input type="text" id="register-username" placeholder="Username">
+            <input type="email" id="register-email" placeholder="Email">
+            <input type="password" id="register-password" placeholder="Password">
+            <button id="register-btn">Register</button>
+        </div>
+    </div>
+
+    <!-- Tombol Back To Top -->
+    <a href="#" class="back-to-top" id="backToTopBtn">&#8679;</a>
+
+    <!-- Donasi Bosku -->
+
+    <!-- Donation Container -->
+    <div class="donation-container">
+        <button class="donation-button">DONATE NOW</button>
+    </div>
+
+    <!-- Donation Box -->
+    <div id="donation-box">
+        <div class="arrow-btn" onclick="toggleDonationBox()"></div> <!-- Tombol panah -->
+        <h3>Profile Donasi</h3>
+        <p>Terima kasih atas dukungan Anda. Mari kita bersama membantu sesama yang membutuhkan.</p>
+        <a href="https://kitabisa.com/campaign/sekolahyanglayakuntukanakanakpelosokmaluku" target="_blank" class="donate-link">Lihat Kampanye</a>
+    </div>
+    
+    <!--Feedback ALL-->
+    <section class="pop-up-feedback">
+        <div class="feedback">
+            <span class="close-btn" onclick="closeFeedback()">&times;</span>
+            <form action="https://script.google.com/macros/s/AKfycbw3ckK30W_CDyQ4b_yIyuhNe672QNAcPEGt3ZGpYZG29xLkt-67OZovGZ8W5m1IDSCp/exec" class="contact-left" id="FeedbackForm" method="POST">
+                <div class="contact-left-title">
+                    <h6>Put Your Feedback here</h6>
+                    <hr>
+                </div>
+                <input type="text" id="name" name="name" placeholder="Name" class="contact-inputs" required>
+                <input type="text" id="email" name="email" placeholder="E-mail" class="contact-inputs" required>
+                <textarea id="message" name="message" placeholder="Message and Feedback" class="contact-inputs"></textarea>
+                <button type="submit"> Submit</button>
+            </form>
+            <div id="thankYouMessage" style="display: none; text-align: center;">
+                <h3>Thank You for Your Feedback!</h3>
+                <p>Your input is valuable to us. We'll review it soon.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Scripts -->
+    <script src="js/login.js"></script>
+    <script src="js/register.js"></script>
+    <script src="crisp-widget.js"></script>
+
+    
+ 
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="OGOL/LOGO_UNPAR_TRANS.png" alt="Logo Universitas Katolik Parahyangan">
+                <address>
+                    <p>Jl. Ciumbuleuit No. 94 Bandung 40141<br>Jawa Barat</p>
+                    <p>(022) 203 2655, (022) 204 2004</p>
+                    <p>math@unpar.ac.id</p>
+                </address>
+            </div>
+    
+            <div class="footer-extra">
+                <div class="logos">
+                    <img src="OGOL/BAN-PT.png" alt="BAN-PT">
+                    <img src="OGOL/MBKM.png" alt="Kampus Merdeka">
+                </div>
+                <div class="footer-button">
+                    <a href="#" class="cta-button">Daftar Sekarang</a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2024 Matematika Universitas Katolik Parahyangan. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="PARA JAVASCRIPT/himpunan_js.js"></script>
+
+    </body>
+</html>

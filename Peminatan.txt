@@ -1,0 +1,4 @@
+1	Sains	Matematika	Sarjana	Aktuaria 674	
+2	Sains	Matematika	Sarjana	Analitika Data  80	
+3	Sains	Matematika	Sarjana	Matematika Murni dan Pengajaran  10	
+4	Sains	Matematika	Sarjana	Optimasi dan Dinamika  15
